@@ -1,0 +1,122 @@
+*{
+  padding: 0;
+  margin: 0;
+  background: #333;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+}
+
+.section {
+  margin: 60px;
+}
+h1 {
+  font-size: 60px;
+  margin: 30px;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 20px;
+}
+
+p {
+  line-height: 1.4;
+  margin: 10px;
+}
+
+.check-container {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0;
+  width: 60px;
+  margin-top: 10px;
+}
+
+.check-container p {
+  position: relative;
+  top: 15px;
+  text-align: center;
+  color: #242628;
+  font-size: 16px;
+}
+
+.check-container input {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+  margin: 0px;
+  padding: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  height: 20px;
+  width: 50px;
+  background-color: #eaeaea;
+  border-radius: 50%;
+  border: 2px solid green;
+}
+
+.check-container input:checked ~ .checkmark {
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.check-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-container .checkmark:after {
+    left: 15px;
+    width: 7px;
+    height: 15px;
+    border: solid gray;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.strong2 .check-container .checkmark:after {
+  border: solid #020407;
+  top: -3px;
+  width: 10px;
+  height: 20px;
+  border-width: 0 5px 5px 0;
+}
+
+.strong3 .check-container .checkmark:after {
+  border: solid #020407;
+  top: -10px;
+  width: 12px;
+  height: 24px;
+  border-width: 0 10px 10px 0;
+}
+
+.stronganddark .check-container .checkmark:after {
+  border: solid black;
+  top: -520px;
+  left: -50px;
+  width: 200px;
+  height: 400px;
+  border-width: 0 100px 100px 0;
+}
+
+.stronganddark h1 {
+  font-size: 100px;
+}
